@@ -1,9 +1,0 @@
-steps:
-- name: 'gcr.io/buildpacks/builder'
-  args: ['build', '-path', '.', '-builder', 'gcr.io/buildpacks/builder:v1']
-  dir: '/'
-  env:
-  - GOOGLE_RUNTIME=python
-  - GOOGLE_ENTRYPOINT=python main.py
-images:
-- gcr.io/kayu-deteksi/deteksi_kayu:latest
